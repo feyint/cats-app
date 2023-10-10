@@ -1,0 +1,7 @@
+{
+  "name": "CatsApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Catbreeds
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <!-- <ion-grid>
+      <ion-row *ngFor="let item of cats"  class="ion-justify-content-between">
+        <ion-card  class="card-size">
+          <ion-card-header class="label-card">
+            {{item.name}}
+          </ion-card-header>
+          <ion-card-content>
+            <ion-col size="12">
+              <ion-img
+                src="https://cdn2.thecatapi.com/images/{{item.reference_image_id}}.jpg"
+                alt="Cat image"
+              ></ion-img>              
+            </ion-col>           
+            <ion-col push-sm="6"> {{item.origin}}</ion-col>
+            <ion-col pull-sm="6"> {{item.intelligence}}</ion-col>
+          </ion-card-content>
+        </ion-card>
+      </ion-row>
+    </ion-grid> -->
+
+    <ion-grid>
+      <ion-row *ngFor="let item of cats" class="row-card">       
+          <ion-col class="label-card">
+            {{item.name}}
+          </ion-col>         
+            <ion-col size="12">
+              <ion-img
+                src="https://cdn2.thecatapi.com/images/{{item.reference_image_id}}.jpg"
+                alt="Cat image"
+              ></ion-img>              
+            </ion-col>           
+            <ion-col class="label-card" push-sm="6"> {{item.origin}}</ion-col>
+            <ion-col class="label-card" pull-sm="6"> {{item.intelligence}}</ion-col>         
+      </ion-row>
+    </ion-grid>
+
+
+  </div>
+</ion-content>
